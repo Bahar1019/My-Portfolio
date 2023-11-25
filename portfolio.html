@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfollio website</title>
+    <link rel="stylesheet" href="portfollio.css" />
+    <script
+      src="https://kit.fontawesome.com/bd9b45b1d1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front end web developer</p>
+          <h1>Hi,I am <span>Bahar</span> from UK</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-------About--------->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+                I'm a web developer with a focus on the Front-end, but still exploring other technologies
+                and frameworks that catch my interest! 
+                if you're looking for a developer to add to your team, I'd love to hear from you!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Eductaion</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+               
+                <li><i class="fa-brands fa-html5 fa-beat"></i> <span>HTML5</span></li>
+                <li><i class="fa-brands fa-css3 fa-beat"></i> <span>CSS3</span></li>
+                <li><i class="fa-brands fa-js fa-beat-fade"></i> <span>JAVASCRIPT [ES6]</span></li>
+                <li><i class="fa-brands fa-react fa-spin"></i> <span>REACT JS</span></li>
+                <li><i class="fa-brands fa-square-git fa-fade"></i> <span>GIT </span></li>
+                
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2021 - Present</span><br/>Worked as a freelance developer in Fiver and Upwork.</li>
+               
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020 - 2022 (Left after 5th Semester)</span><br/>
+                  University of Greenwich [Computer Science]
+                </li>
+                <li><span>Self-taught</span><br/> Learned from various online resource such as Youtube, Udemy, Chat-GPT, Google</li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------Services------>
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-chrome fa-spin-pulse"></i>
+            <h2>Developing Website </h2>
+            <p>
+             Developing and Designing beautiful fully responsive and interactive website from scratch
+            using technologies like HTML, CSS, JAVASCRIPT and related technologies like REACT, SASS, WORDPRESS, GIT
+            and deploying them on the web.
+
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          
+          <div>
+            <i class="fa-brands fa-app-store-ios fa-beat-fade"></i>
+            <h2>Web App Development</h2>
+            <p>
+              Developing web application with required technologies, particularly using 
+              front end framework like REACT JS.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------My portfolio-->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images\weatherapp.png" />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>
+                In this project i've built a Weather App for Website using HTML, CSS 
+                and JavaScript. It shows the current weather data from Fess API fey
+                from OpenWeatherMap and display the weather information like Temperature,
+                Weather condition, Humidity and Wind Speed according to the city on
+                our website or app.
+               
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images\screenshot.png" />
+            <div class="layer">
+              <h3>Streaming App interface</h3>
+              <p>
+               This is a Netflix like movie website interface built with HTML, CSS and 
+               Javascript.This website shows extensive use of CSS styling.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images\ecommerce.png" />
+            <div class="layer">
+              <h3>Ecommerce Website </h3>
+              <p>
+                This is an Ecommerce website which i built using pure HTML, CSS and
+                JAVASCRIPT. This website has use of complex use of nested HTML and CSS styling.
+                There is also a nice example of using slider.
+
+              </p>
+              <a href="https://stellar-tulumba-5955ee.netlify.app"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images\Landingpage.png" />
+            <div class="layer">
+              <h3>Landing Page</h3>
+              <p>
+                This a simple Landing page project which shows the current time and 
+                greets the users.Also user can insert their name on the page.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn"> See more</a>
+      </div>
+    </div>
+
+    <!----------Contact-->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p>
+              <i class="fa-regular fa-paper-plane fa-beat-fade"></i>
+              Email: bahar.ins99@gmail.com
+            
+            </p>
+
+            <p><i class="fa-solid fa-phone fa-fade"></i>Phone: +447427563546</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook fa-beat"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin fa-beat"></i></a>
+              <a href="https://github.com/Bahar1019"><i class="fa-brands fa-github fa-beat"></i></a>
+            </div>
+            <a href="" download class="btn btn2">DOWNLOAD CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet"">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          All the Copyright is reserved to @ Bahar.
+        </p>
+      </div>
+    </div>
+
+    <script src="portfollio.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbw0zNl3ua6OOZQZ2bmZyBNG3oBD19u-sIFh7-yjyUMPxJDWyVOnyiWJeOSfWDTRWPI/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg =document.getElementById('msg')
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {msg.innerHTML='Message sent succssfully'
+           setTimeout(function(){
+            msg.innerHTML=''
+           },5000)
+          form.reset()}
+          )
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
